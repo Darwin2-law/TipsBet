@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    color: #f4c542;
+}
+
+header nav ul li a:hover {
+    color: #f4c542;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: left;
+    min-width: 200px;
+}
+
+.dropdown-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Overlay for text visibility */
+}
+
+main h2 {
+    margin: 1rem 0;
+}
+
+.message {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.message button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.message button:hover {
+    background: darkred;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
